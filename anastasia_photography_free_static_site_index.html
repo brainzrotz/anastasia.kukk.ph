@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anastasia Kukk Photography — Tallinn Weddings, Portraits & Family</title>
+  <meta name="description" content="Timeless photography in Tallinn & across Estonia — weddings, portraits, and family sessions. Honest color, gentle editing, and a calm, client-first experience." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Anastasia Kukk Photography" />
+  <meta property="og:description" content="Timeless photography in Tallinn & across Estonia — weddings, portraits, and family sessions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.example" />
+  <meta property="og:image" content="/assets/og-cover.jpg" />
+  <link rel="icon" href="/assets/favicon.png" />
+
+  <!-- Minimal, dependency-free CSS -->
+  <style>
+    :root{
+      --bg:#ffffff;--text:#0f172a;--muted:#475569;--accent:#111827;--soft:#f1f5f9;--border:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px,calc(100% - 2rem));margin-inline:auto}
+    header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+    .brand{font-weight:700;letter-spacing:.5px}
+    .brand small{font-weight:400;color:var(--muted)}
+    .btn{display:inline-block;padding:.8rem 1rem;border:1px solid var(--text);border-radius:999px;transition:.2s ease;font-weight:600}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,0,0,.08)}
+    .btn.primary{background:var(--text);color:#fff}
+
+    .hero{padding:4.5rem 0 3.5rem}
+    .hero-grid{display:grid;gap:2rem;grid-template-columns:1.2fr .8fr}
+    .tag{display:inline-flex;gap:.4rem;align-items:center;background:var(--soft);border:1px solid var(--border);padding:.35rem .6rem;border-radius:999px;font-size:.85rem;color:var(--muted)}
+    h1{font-size:clamp(1.8rem,3.8vw,3rem);line-height:1.1;margin:.8rem 0 1rem}
+    p.lead{font-size:1.1rem;color:var(--muted);max-width:62ch}
+    .hero-cta{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.25rem}
+
+    .card{background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden}
+    .section{padding:3.2rem 0}
+    h2{font-size:clamp(1.4rem,2.8vw,2rem);margin:0 0 1rem}
+    .triplet{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr)}
+    .triplet .item{border:1px solid var(--border);border-radius:16px;padding:1rem}
+    .muted{color:var(--muted)}
+
+    .grid{display:grid;gap:.75rem;grid-template-columns:repeat(3,1fr)}
+    .grid picture{border-radius:14px;overflow:hidden}
+
+    .quote{border-left:4px solid var(--text);padding-left:1rem;margin:0}
+
+    form{display:grid;gap:.8rem}
+    input, textarea, select{width:100%;padding:.9rem;border:1px solid var(--border);border-radius:12px;background:#fff;font:inherit}
+    textarea{min-height:140px}
+
+    footer{padding:2.5rem 0;border-top:1px solid var(--border);color:var(--muted)}
+
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr}
+      .triplet{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width: 520px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Anastasia Kukk Photography",
+    "url":"https://your-domain.example",
+    "image":"/assets/og-cover.jpg",
+    "address":{"@type":"PostalAddress","addressLocality":"Tallinn","addressCountry":"EE"},
+    "telephone":"+372 0000 000",
+    "areaServed":"Estonia",
+    "priceRange":"€€",
+    "sameAs":["https://instagram.com/anastasia.kukk.ph","https://facebook.com/"],
+    "description":"Timeless wedding, portrait & family photography across Estonia."
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">anastasia.kukk.ph <small>photography</small></div>
+      <nav>
+        <a class="btn" href="#portfolio">Portfolio</a>
+        <a class="btn" href="#services">Services</a>
+        <a class="btn primary" href="#contact">Check availability</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container hero-grid">
+    <div>
+      <span class="tag">Tallinn • Estonia</span>
+      <h1>Photography that tells your story—weddings, portraits & beyond.</h1>
+      <p class="lead">Natural, true‑to‑life images with gentle, artful editing. From your biggest milestones to everyday moments, I photograph what matters most—calmly and beautifully.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#contact">Book a session</a>
+        <a class="btn" href="#portfolio">See the work</a>
+      </div>
+    </div>
+    <div class="card">
+      <picture>
+        <source srcset="/assets/hero.webp" type="image/webp" />
+        <img src="/assets/hero.jpg" alt="Golden-hour couple by the water in Tallinn" loading="eager" />
+      </picture>
+    </div>
+  </section>
+
+  <!-- Value props -->
+  <section class="section container">
+    <h2>What clients love</h2>
+    <div class="triplet">
+      <div class="item"><strong>Artful, gentle edits</strong><p class="muted">True color and clean retouching—timeless, never overdone.</p></div>
+      <div class="item"><strong>Calm guidance</strong><p class="muted">Posing that feels natural so you can relax and enjoy the moment.</p></div>
+      <div class="item"><strong>Fast delivery</strong><p class="muted">Sneak peeks in 48h and full galleries delivered on time.</p></div>
+    </div>
+  </section>
+
+  <!-- Portfolio grid -->
+  <section id="portfolio" class="section container">
+    <h2>Selected work</h2>
+    <div class="grid">
+      <!-- Replace with your images. Use WebP + JPG fallback, lazy loading. -->
+      <picture><source srcset="/assets/g1.webp" type="image/webp" /><img src="/assets/g1.jpg" alt="Wedding in Tallinn Old Town" loading="lazy"></picture>
+      <picture><source srcset="/assets/g2.webp" type="image/webp" /><img src="/assets/g2.jpg" alt="Sunset couple at Pirita beach" loading="lazy"></picture>
+      <picture><source srcset="/assets/g3.webp" type="image/webp" /><img src="/assets/g3.jpg" alt="Portrait in soft window light" loading="lazy"></picture>
+      <picture><source srcset="/assets/g4.webp" type="image/webp" /><img src="/assets/g4.jpg" alt="Family session in Kadriorg Park" loading="lazy"></picture>
+      <picture><source srcset="/assets/g5.webp" type="image/webp" /><img src="/assets/g5.jpg" alt="Editorial style portrait" loading="lazy"></picture>
+      <picture><source srcset="/assets/g6.webp" type="image/webp" /><img src="/assets/g6.jpg" alt="Detail shot of bouquet" loading="lazy"></picture>
+    </div>
+  </section>
+
+  <!-- Services & pricing (teaser) -->
+  <section id="services" class="section container">
+    <h2>Sessions & starting prices</h2>
+    <div class="triplet">
+      <div class="item">
+        <strong>Weddings</strong>
+        <p class="muted">From morning details to first dances—crafted as a gentle, honest story.</p>
+        <p><em>From €1,290</em></p>
+      </div>
+      <div class="item">
+        <strong>Portraits & Couples</strong>
+        <p class="muted">Locations you love, natural guidance, and images that feel like you.</p>
+        <p><em>From €220</em></p>
+      </div>
+      <div class="item">
+        <strong>Family</strong>
+        <p class="muted">Playful, patient sessions at home or outdoors—perfect for little ones.</p>
+        <p><em>From €250</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section container">
+    <h2>Client words</h2>
+    <p class="quote">“We felt so relaxed the entire day. The photos are exactly how we remember it—warm and real.” <span class="muted">— K. & M., Tallinn</span></p>
+  </section>
+
+  <!-- About snippet -->
+  <section class="section container">
+    <h2>Meet Anastasia</h2>
+    <p class="muted">I’m a Tallinn-based photographer focused on honest, timeless images. I love gentle color and clean retouching that keeps skin natural and moments authentic.</p>
+  </section>
+
+  <!-- Contact / booking form -->
+  <section id="contact" class="section container">
+    <h2>Check availability</h2>
+    <p class="muted">Tell me about your date and vision—I'll get back within 24 hours.</p>
+    <!-- Use Formspree (free tier) or Netlify Forms. Replace the action URL below with your Formspree endpoint. -->
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Email address" required />
+      <input type="text" name="phone" placeholder="Phone (optional)" />
+      <select name="type" required>
+        <option value="" disabled selected>Session type</option>
+        <option>Wedding</option>
+        <option>Portraits / Couples</option>
+        <option>Family</option>
+        <option>Event</option>
+        <option>Other</option>
+      </select>
+      <input type="text" name="date" placeholder="Preferred date / range" />
+      <textarea name="message" placeholder="Tell me about your plans & location"></textarea>
+      <button class="btn primary" type="submit">Send inquiry</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <p>© <span id="year"></span> Anastasia Kukk Photography • Tallinn, Estonia</p>
+        <p><a href="https://instagram.com/anastasia.kukk.ph">Instagram</a> • <a href="#">Facebook</a> • <a href="mailto:hello@your-domain.example">hello@your-domain.example</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
